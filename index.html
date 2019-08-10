@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="./mainstyles.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.svg" alt="logo" aria-label="company logo" class="logo">
+            <i class="fas fa-bars"></i>
+            <nav>
+                <i class="fas fa-times"></i>
+                <a href="#" class="nav_item">Product</a>
+                <a href="#" class="nav_item">Features</a>
+                <a href="#" class="nav_item">Pricing</a>
+                <a href="#" class="nav_item_login">Login</a>
+            </nav>
+        </header>
+        <div class="flex_row">
+        <div class="devices">
+            <img src="./images/illustration-devices.svg" alt="devices" class="devices_image">
+        </div>
+        <!--aside is beneath header on mobile-->
+        <aside class="main">
+            <div class="main_top_row">
+            <p class="main_p_rounded_dark">New</p>
+            <p class="main_top_p">monograph dashboard</p>
+            </div>
+            <h1>powerful insights into your teams</h1>
+            <p class="main_description">Project planning and time tracking for agile teams</p>
+            <div class="main_btn_row">
+                <a href="#" class="main_btn_red">schedule a demo</a>
+                <p class="main_btn_p">to see a preview</p>
+            </div>
+        </aside>
+        </div>
+        <script>
+        $(document).ready(function() 
+        {
+            //mobile nav
+            $(".fa-bars").click(function() {
+                $("nav").toggleClass("mobile_nav");
+                $(".fa-times").toggleClass("mobile_nav");
+            });
+
+            $(".fa-times").click(function() {
+                if ($("nav").hasClass("mobile_nav")) 
+                {
+                    $("nav").removeClass("mobile_nav");
+                } else {
+                    $("nav").addClass("mobile_nav");
+                }
+            });
+        });
+        </script>
+    </body>
+    </html>
+        

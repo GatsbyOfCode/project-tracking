@@ -1,0 +1,238 @@
+@import 'variables'
+
+//layout
+
+*
+    box-sizing: border-box    
+
+//hover states
+.nav_item:hover
+    text-decoration: underline
+    color: $darkGrayishBlue
+
+.nav_item_login:hover
+    text-decoration: underline
+
+.main_btn_red:hover
+    background-color: hsl(0, 100%, 73%)
+
+//btn
+.main_btn_red
+    border: none
+    background-color: $primary
+    color: #ffffff
+    border-radius: 5px
+    font-weight: 600
+    width: 8rem
+    height: 2rem
+    text-align: center
+    padding: 1%
+    margin-right: 6%
+    text-decoration: none
+    font-size: 1.1rem
+    @media only screen and (min-width: 801px) {
+    height: 2.3rem
+    width: 9rem
+    font-size: 1.2rem
+    padding: 1.5%}
+
+nav,
+h1,
+.main_btn_red
+    font-family: $font
+
+//header
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 3% 3% 12% 3%
+    @media only screen and (min-width: 801px){
+    display: flex
+    justify-content: space-between
+    height: 5rem
+    padding: 0}
+
+//body
+body
+    font-family: $bodyFont
+    width: 100%
+    margin: 0
+    padding-top: 1%
+    display: flex
+    flex-direction: column
+    @media only screen and (max-width: 800px) {
+    justify-content: space-between}
+        
+//nav
+nav
+    @media only screen and (max-width: 800px) {
+    padding: 0
+    position: fixed
+    z-index: 1
+    background: $lightGrayishBlue
+    height: 40%
+    width: 80%
+    top: 0
+    right: 0
+    display: none
+    margin: 5% 3% 0 0
+    //flex on active state
+    align-items: center
+    justify-content: space-around
+    flex-direction: column
+    text-align: center}
+    @media only screen and (min-width: 801px) {
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    padding: 0 5% 0 40%}
+        
+.nav_item
+    font-size: 1.3rem
+    text-decoration: none
+    color: $veryDarkBlue
+    font-weight: 900
+    @media only screen and (max-width: 800px) {
+    font-size: 1.1rem}
+
+.nav_item_login
+    padding: 0 
+    font-size: 1.3rem
+    color: $grayishBlue
+    text-decoration: none
+    @media only screen and (max-width: 800px) {
+    display: flex
+    font-size: 1.1rem
+    border-top: 1px solid $grayishBlue
+    width: 100%
+    justify-content: center
+    align-items: center
+    padding: 2%
+    margin-top: 4%}
+    
+.mobile_nav
+    display: flex
+
+.logo
+    @media only screen and (min-width: 801px) {
+    width: 15%
+    height: 5rem
+    padding: 1.5% 5%}
+    
+.fas
+    font-size: 1.7rem
+    padding-top: 1%
+    @media only screen and (min-width: 801px) {
+    display: none}
+
+.fa-times
+    display: flex
+    position: relative
+    width: 100%
+    justify-content: flex-end
+    margin: 0
+    padding: 0
+    @media only screen and (min-width: 801px) {
+    display: none}
+
+//images
+.flex_row
+    @media only screen and (min-width: 801px) {
+    display: flex
+    flex-direction: row}
+
+.devices
+    width: 100%
+    @media only screen and (min-width: 801px) {
+    order: 2
+    width: 50%}
+        
+.devices_image
+    position: relative
+    height: auto
+    width: 100%
+    @media only screen and (min-width: 801px) {
+    padding-top: 5%}
+        
+//main aside
+.main
+    @media only screen and (min-width: 801px){
+    order: 1
+    width: 50%
+    padding-top: 5%}
+
+.main_top_row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 20% 0 5%
+    margin-bottom: 0
+    @media only screen and (min-width: 801px) {
+    justify-content: center
+    padding: 0 13% 0 0}
+        
+
+.main_top_p
+    color: $grayishBlue
+    text-transform: uppercase
+    width: 100%
+    font-size: 1rem
+    @media only screen and (min-width: 801px) {
+    width: 65%
+    font-size: 1.1rem}
+
+.main_p_rounded_dark
+    border: none
+    background-color: $veryDarkBlue
+    color: #ffffff
+    width: 23%
+    height: 1.6rem
+    text-align: center
+    border-radius: 25px
+    margin-right: 5%
+    font-size: 1.1rem
+    @media only screen and (min-width: 801px) {
+    width: 12%}
+
+h1
+    margin: 0
+    font-size: 2.2rem
+    text-transform: uppercase
+    font-weight: 900
+    letter-spacing: 2px
+    padding: 0 2% 0 5%
+    text-shadow: 1px 1px black
+    @media only screen and (min-width: 801px) {
+    font-size: 4rem
+    padding: 1% 15% 0 8%}
+
+.main_description
+    padding: 0 5%
+    line-height: 1.5rem
+    font-size: 1.1rem
+    margin-bottom: 0
+    color: $grayishBlue
+    @media only screen and (min-width: 801px) {
+    font-size: 1.3rem
+    padding: 0 45% 0 8%
+    line-height: 1.7rem}
+
+.main_btn_row
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin: 0
+    padding: 10% 13% 10% 0
+    @media only screen and (min-width: 801px) {
+    padding: 5% 40% 0 0}
+
+.main_btn_p
+    text-transform: uppercase
+    font-size: 0.8rem
+    color: $grayishBlue
+    @media only screen and (min-width: 801px) {
+    font-size: 1rem}
